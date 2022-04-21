@@ -1,0 +1,88 @@
+Last login: Mon Apr  4 15:17:25 on ttys002
+(base) suvaneshragukumar@AGLS-MLT-585 ~ % cd desktop
+(base) suvaneshragukumar@AGLS-MLT-585 desktop % mkdir demo1
+(base) suvaneshragukumar@AGLS-MLT-585 desktop % cd demo1
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % nano demo.text
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % nano demo.txt
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/suvaneshragukumar/Desktop/demo1/.git/
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git add .
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/SuvaneshRagukumar/demo.git
+git push -u origin main
+
+[master (root-commit) 82ca6be] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 199 bytes | 199.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SuvaneshRagukumar/demo.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git checkout -b "new
+dquote> git checkout -b "new-branch"
+dquote> git add .
+dquote> 
+dquote> 
+dquote> 
+dquote>      
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git checkout -b "new-branch"
+Switched to a new branch 'new-branch'
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % nano demo.txt
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git commit -m "msg"
+On branch new-branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git add .
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git commit -m "msg"
+[new-branch e2b55ef] msg
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git push origin new-branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'new-branch' on GitHub by visiting:
+remote:      https://github.com/SuvaneshRagukumar/demo/pull/new/new-branch
+remote: 
+To https://github.com/SuvaneshRagukumar/demo.git
+ * [new branch]      new-branch -> new-branch
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % git clone https://github.com/SuvaneshRagukumar/demo.git
+Cloning into 'demo'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+(base) suvaneshragukumar@AGLS-MLT-585 demo1 % cd demo
+(base) suvaneshragukumar@AGLS-MLT-585 demo % nano demo.txt
+(base) suvaneshragukumar@AGLS-MLT-585 demo % git add .
+(base) suvaneshragukumar@AGLS-MLT-585 demo % git commit -m "new data"
+[main c53bc20] new data
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) suvaneshragukumar@AGLS-MLT-585 demo % git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 235 bytes | 235.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SuvaneshRagukumar/demo.git
+   82ca6be..c53bc20  main -> main
+(base) suvaneshragukumar@AGLS-MLT-585 demo % 
